@@ -3,7 +3,7 @@ import json
 import time
 import os
 
-API_KEY = 'AIzaSyDriu_R0GLnoN8q7ak78eMUyMlLyPxBkBc'  # 請替換為你的Google Maps API金鑰
+API_KEY = '(your Google Maps API key)'  # 請替換為你的Google Maps API金鑰
 gmaps = googlemaps.Client(key=API_KEY)
 
 def get_landmark_info(client, landmark):
@@ -69,7 +69,7 @@ def main():
     """
     主函數，執行地標資訊查詢及附近店家搜尋
     """
-    landmark = "逢甲大學"
+    landmark = "逢甲大學" # 可自行更改所在位置
     landmark_info = get_landmark_info(gmaps, landmark)
     if not landmark_info:
         print("無法取得地標資訊")
