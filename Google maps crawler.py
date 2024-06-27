@@ -3,7 +3,7 @@ import json
 import time
 import os
 
-API_KEY = 'AIzaSyDriu_R0GLnoN8q7ak78eMUyMlLyPxBkBc'  # 請替換為你的Google Maps API金鑰
+API_KEY = 'your_api'  # 請替換為你的Google Maps API金鑰
 gmaps = googlemaps.Client(key=API_KEY)
 
 def get_landmark_info(client, landmark):
